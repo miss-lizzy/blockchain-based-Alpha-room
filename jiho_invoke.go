@@ -59,8 +59,8 @@ func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface) pb.Response{
 
 //invoke
 func(t *SimpleChaincode) invoke(stub shim.ChaincodeStubInterface, args []string) pb.Response{
-	var uniqueNum int
-	var enterBit, seatNum int
+	var uniqueNum int	//사용자의 고유번호
+	var enterBit, seatNum int	//입장 비트와 좌석 번호
 	var err error
 
 	if len(args)!=3{
